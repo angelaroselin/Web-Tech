@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="2 ;
+url=tiger2.html">
+<title>Tiger 1</tiger>
+</head>
+<body>
+<h1>Tiger 1</h1>
+</body>
+</html>

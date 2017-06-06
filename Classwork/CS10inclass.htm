@@ -1,0 +1,52 @@
+<html>
+<head>
+<title> CS 10 - Multimedia</title>
+</head>
+<style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+<body>
+
+<a href="https://www.youtube.com/watch?v=AlCqyZEXM1I">Travel More youtube video. Professor used the Ed Sheeran Shape of You example</>
+<a href="dts_20170519.mps">music-2</a>
+<a href="file:\\C:\Dropbox\MIS3690_WebTech\Fall2015\ClassSessi
+ons\CS10">ppt</a>
+    
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PMivT7MJ41M" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="50%" scrolling="no" frameborder="no"
+src="https://w.soundcloud.com/player/?url=https%3A//api.soundc
+loud.com/tracks/66424164&amp;auto_play=false&amp;hide_related=
+false&amp;show_comments=true&amp;show_user=true&amp;show_repos
+ts=false&amp;visual=true">
+</iframe>
+<p>
+Video courtesy of 
+<a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+</p>
+
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap()
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+
+</body>
+</html>

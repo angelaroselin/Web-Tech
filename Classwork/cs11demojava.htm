@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CS11 - Intro to JavaScript</title>
+
+    <style type="text/css">
+        /*h1 {font-weight:bold; background-color: Silver;}
+	            p {text-align:center;}*/
+    </style>
+
+    <script type="text/javascript">
+        /* Your JavaScript goes here */
+        function change_BackgroundColor() {
+            var bgColors = new Array("green", "yellow", "blue", "pink", "red", "orange");
+            var n = bgColors.length;
+            var randIndex = Math.floor(Math.random() * n);
+            var b = document.getElementById("bodyA");
+            b.style.backgroundColor = bgColors[randIndex];
+        }
+
+        function enlarge_Img() {
+            var myimg = document.getElementById("imgB");
+            var w = myimg.style.width;
+            w = parseInt(w);
+            w = w + 30;
+            myimg.style.width = w + "px";
+        }
+
+        function letsgo() {
+            var myTitle = document.getElementById("title");
+            myTitle.style.color = "red";
+            myTitle.style.fontSize = "60px";
+            myTitle.style.fontfamily = "Arial";
+        }
+    function Pickle() {
+            var myTitle = document.getElementById("title");
+            myTitle.style.color = "purple";
+            myTitle.style.fontSize = "60px";
+            myTitle.style.fontfamily = "Times New Roman";
+
+            var x = 2017;
+            var y = 6;
+            var result = x + y;
+            alert("The result is " + result);
+        } </script>
+</head>
+
+
+<body id="bodyA">
+    <hr />
+    <h1 id= "title" onclick="change_BackgroundColor()"> Don't Look - I am Changing</h1>
+    <hr />
+    <img id="imgB" src="images/man.png" alt="man" style="width:30px" onmouseover="enlarge_Img()" />
+    <p>
+        <button onclick="letsgo()">I dare you to click on me!</button>
+    </p>
+    <hr />
+ <p id="newP">
+        testinggggggggggg the new JavaScript Function. 
+        <button onclick="Pickle()"> I double dare you to click on me!</button>
+    </p>
+</body>
+
+</html>
