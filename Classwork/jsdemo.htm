@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="UTF-8">
+
+<title>Web Technologies - JavaScript Demo</title>
+<style type="text/css">
+        /*h1 {font-weight:bold; background-color: Silver;}
+	            p {text-align:center;}*/
+    </style>
+
+  <script type="text/javascript">
+        /* Your JavaScript goes here */
+        function change_BackgroundColor() {
+            var colorOne=document.getElementById("name");
+            colorOne.style.backgroundColor="grey";
+        }
+        function change_red() {
+            var ColorTwo=document.getElementById("red");
+            colorTwo.style.color='red'
+        }
+        </script>
+    </head>
+    <body>
+<h1 id="name" onclick="change_BackgroundColor()"> My First Title</h1>
+
+<h1 id="red" onclick="change_red()"ondblclick="change_BackgroundColor()"> Another Title </h1>
+
+
+</body>
+
+</html>
