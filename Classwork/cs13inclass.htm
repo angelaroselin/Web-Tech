@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>CS13-InClass</title>
+
+        <style type="text/css">
+            /* Your styles go here */
+
+            body {
+                text-align: center;
+            }
+        </style>
+        <script type="text/javascript">
+function enlargeMe(id) {
+    var i = document.getElementById(id);
+    var w = i.width;
+    newWidth = parseInt(w);
+    i.width = w * 1.5;
+
+}
+function shrinkMe(id){
+    var i = document.getElementById(id);
+    var w = i.width;
+    w = parseInt(w);
+    i.width = w / 1.5;
+}
+
+        </script>
+    </head>
+
+    <body>
+
+        <h2> Manipulating Styles and Images </h2>
+
+        <p><img src="images/usa.png" onmouseover="enlargeMe()" onmouseout="shrinkMe()" alt="Image goes here" title="map of USA" width="400"></p>
+<p><img id="myself" src="images/Argentina.png" onmouseover="enlargeMe(this.id)" onmouseout="shrinkMe(this.id)"
+      alt="image goes here"
+      title="Myself" width="400"></p>
+      <p><img id="myself" src="images/Netherlands.png" onmouseover="enlargeMe(this.id)" onmouseout="shrinkMe(this.id)"
+      alt="image goes here"
+      title="Myself" width="400"></p>
+      <p><img id="myself" src="images/baby.jpg" onmouseover="enlargeMe(this.id)" onmouseout="shrinkMe(this.id)"
+      alt="image goes here"
+      title="Myself" width="400"></p>
+      
+      
+        <hr>
+
+    </body>
+
+</html>
