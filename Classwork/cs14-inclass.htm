@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>CS14-InClass</title>
+        <style type="text/css">
+            h1 {
+                text-align: center;
+                font-family: Lucida Handwriting;
+                font-weight: bold;
+            }
+
+            p {
+                text-align: center;
+                margin-top: 50px;
+            }
+
+            img {
+                border: 15px ridge yellow;
+                width: 50%;
+            }
+        </style>
+
+
+        <script type="text/javascript">
+        function ask() {
+            var x=prompt("What kind of leaf")
+            var i=document.getElementById("image1")
+            if (x.toLocaleLowerCase()=="maple"){
+                i.src="images/maple.jpg";
+                title="maple";
+
+            }
+        else if (x.toLocaleLowerCase()=="shamrock"){
+            i.src="images/shamrock.jpg";
+            i.title="shamrock"
+        }
+
+        </script>
+    </head>
+
+    <body>
+        <h1> Changing Images Using User inputs - Click on Image below to start</h1>
+        <p>
+            <img src="" alt="Click here to see the image of your choice" title="" />
+        </p>
+    </body>
+
+</html>

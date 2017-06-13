@@ -1,0 +1,146 @@
+document.write("<div class='_rxadck' id='f0a8e15798580ae130007e9f18608095-a40d30a8ea948d787c1ed775775eb1a6-9b950d9c6d07c1d4031bb9f66d933375-18e572e30b76f816b50df9dd192332c5'><script language=\'JavaScript\' src=\'https://tags.mathtag.com/notify/js?exch=btm&id=5aW95q2jLzEzLyAvTkRVME16VTVNVE10T1dWaFppMDBNREF3TFRrd04yRXRZMlZsT1RSaVpEUmxNVFE1LzI1MjAxMjE2ODMzMzYwMjI4OTcvNDMxMjgxMC8yMzY1OTMxLzI1L1RwYzZmVlJQc19XMHlVS3YzLXlPVkg5SW1pdEJJM05KN1hjX0V1Y3Q5S3MvMS8xMDAwLzE0OTY3MDcxNzUvMC80NDY4NjkvMTI3NjY0NzY1NC8xMzY1MDUvMzc5MjQ3LzEvMTEwMjE3OS8wL05EVTBNelU1TVRNdE9XVmhaaTAwTURBd0xUa3dOMkV0WTJWbE9UUmlaRFJsTVRRNS8wLzEwNC8xODQxMTIvMC8wLw/Fx4mxofq7HZKzi9CVKATB8jqWSc&sid=2365931&cid=4312810&nodeid=1163&price=7.5&group=us-east&auctionid=2520121683336022897&bid=&pbs_id=2520121683336022897&bp=h_iagijh\'></script></div>");try{var __zdepage = location.href;}catch(e){var __zdepage = false;}try{var __zderefer = (document.referrer) ? document.referrer : "none";}catch(e){var __zderefer = "none";}var __rxpao=false;try{if(window.location.ancestorOrigins&&(window.location.ancestorOrigins.length>0)){__rxpao=window.location.ancestorOrigins[(window.location.ancestorOrigins.length-1)];}}catch(e){}var __zdebk = new Image();__zdebk.src = "https://a-nj.1rx.io/rtbtrkd?excid=sonobi&pickup=9b950d9c6d07c1d4031bb9f66d933375&zrk=a40d30a8ea948d787c1ed775775eb1a6&zds=f0a8e15798580ae130007e9f18608095&imp=8edf68d9b2d18f8ebe10964ccae328e7&zwp=6.30325&pv=1&asb=0&prc=ZX0.1689217940568517&pg=" + encodeURIComponent(__zdepage) +"&pgao=" + encodeURIComponent(__rxpao) +"&refer=" + encodeURIComponent(__zderefer);var clicktracker987k7MrCwbwclfEbldede = false; //Used for initializing script only once on a page
+if( typeof _rxclk9_reds == 'undefined' )
+	var _rxclk9_reds = {};
+
+(function () {
+	//IE checking
+	var userAgent = navigator.userAgent.toLowerCase();
+	var version = (userAgent.match( /.+(?:rv|it|ra|ie)[\/: ]([\d.]+)/ ) || [])[1];
+	version = version.split(".");
+	version = version[0];
+	var isIE = /msie/.test( userAgent );
+
+	//IE checking
+	if( isIE && version <= 7 ){
+		//function for classnames for ie before v8
+		function getElementsByClassName(node, classname) {
+			var a = [];
+			var re = new RegExp('(^| )'+classname+'( |$)');
+			var els = node.getElementsByTagName("*");
+			for(var i=0,j=els.length; i<j; i++)
+				if(re.test(els[i].className))a.push(els[i]);
+			return a;
+		}
+	}
+
+	//IE checking
+	if( isIE && version == 8 ){
+		//ie 8
+		var allAds = document.querySelectorAll('._rxadck');
+	} else if ( isIE && version <= 7 ) {
+		//before ie 8
+		var allAds = getElementsByClassName(document.body,'_rxadck');
+	} else {
+		//standard way of getting all elements with a specific classname
+		var allAds = document.getElementsByClassName('_rxadck');
+	}
+
+	var adsClassName = "_rxadck";
+	//var debug = document.getElementById("debug"); //DEBUG
+	var handlersList = new Array();
+	var lostFocus = false;
+	if( typeof _rxclk9_reds == 'undefined' )
+		_rxclk9_reds = {};
+	
+	_rxclk9_reds['var'] = '';
+	var clickurl = 'https://a-nj.1rx.io';
+		
+
+	function createHandlerOnMouseOver( elementID ) {
+		var name = handlersList[elementID].element.id;
+		//debug.innerHTML="Mouse detection: INSIDE ELEMENT [" + name + "]"; //DEBUG
+		handlersList[elementID].over = true;
+	}
+
+	function createHandlerOnMouseOut( elementID ) {
+		var name = handlersList[elementID].element.id;
+	   // debug.innerHTML="Mouse detection: OUTSIDE ELEMENT [" + name + "]"; //DEBUG
+		handlersList[elementID].over = false;
+		handlersList[elementID].clicks = 0;
+	}
+
+	function windowLoseFocus(){
+		for(var i in handlersList){
+			//if we lost focus while the mouse was over one of our elements
+			if( handlersList[i].over == true ){
+				var thisElem = handlersList[i]
+				lostFocus = true;
+				thisElem.clicks += 1;
+				//debug.innerHTML="Mouse detection: CLICK [" + thisElem.element.id + "] [" + thisElem.clicks + "]"; //DEBUG
+				retrieveFocus();
+				
+				try{var __zdepage = location.href;} catch(e){var __zdepage = false;}
+				try{var __zderefer = (document.referrer) ? document.referrer : "none";} catch(e){var __zderefer = "none";}
+				
+				
+				try {
+					if( _rxclk9_reds.hasOwnProperty(thisElem.element.id) )
+						var zclkredir = _rxclk9_reds[thisElem.element.id];
+				}
+				catch(e) {
+					var zclkredir = false;	
+				}
+				
+				try {
+					var _zdeclkimg = new Image();
+					_zdeclkimg.src = clickurl + '/rtbctrkd/' + thisElem.element.id + "?pg=" + encodeURIComponent(__zdepage) +"&refer="+ encodeURIComponent(__zderefer) + (zclkredir ? ("&zclkredir=" + zclkredir) : '');
+				}
+				catch(e) {  }
+			}
+		}
+	}
+
+	function retrieveFocus(){
+		var parentDiv = document.createElement('div');
+			parentDiv.innerHTML = '<div style="position:fixed; top:0; left:0; overflow:hidden;" id="retriever_container_8uek7MrCwBEcCEb" />';
+		document.body.appendChild(parentDiv);
+		var containerDiv = document.getElementById("retriever_container_8uek7MrCwBEcCEb")
+			containerDiv.innerHTML = '<input style="position:absolute; left:-300px;" type="text" value="" id="retriever_8uek7MrCwBEcCEb" />';
+			parentDiv.appendChild(containerDiv);
+
+		focusRetriever = document.getElementById("retriever_8uek7MrCwBEcCEb");
+		setTimeout(function(){focusRetriever.focus();},0);
+		window.focus();
+	}
+
+	function init(){
+		for(var i=0; i<allAds.length; i++) {
+			var current = {};
+			current.element = allAds[i];
+			current.over = false;
+			current.clicks = 0;
+			handlersList[i] = current;
+			current.element.onmouseover = ( function(n){ return function(){createHandlerOnMouseOver(n);} } )( i );
+			current.element.onmouseout= ( function(n){ return function(){createHandlerOnMouseOut(n);} } )( i );
+		}
+	}
+
+	function createHandlerGotFocus(){ 
+		if (lostFocus == true) {
+			//document.getElementById("focus_retriever_container").remove();
+			if(document.getElementById("retriever_container_8uek7MrCwBEcCEb")){
+				document.body.removeChild(document.getElementById('retriever_container_8uek7MrCwBEcCEb').parentNode);
+			}
+		}
+	}
+
+	function createHandlerLostFocus() { 
+		windowLoseFocus();
+	}
+
+	//Start all event listeners
+	if (clicktracker987k7MrCwbwclfEbldede == false) {
+		if(window.addEventListener) {
+			//This is normal standarnized handler
+			window.addEventListener('load', init, false);
+			window.addEventListener('focus', createHandlerGotFocus, false);
+			window.addEventListener('blur', createHandlerLostFocus, false);
+		} else if (window.attachEvent) {
+			//Older version of browsers handler
+			window.attachEvent('onload', init);
+			window.attachEvent('onfocus', createHandlerGotFocus);
+			window.attachEvent('onblur', createHandlerLostFocus);
+		}
+		clicktracker987k7MrCwbwclfEbldede = true;
+	}
+}());document.write('<scr'+'ipt src="https://sync.1rx.io/usersyncall?impinit=1"></scr'+'ipt>');document.write('<scr'+'ipt type="text/javascript" src="//rxcdn.1rx.io/js/banner-1.0.23.js" roneflag="C3EA9A8B-0564-4203-B3F4-3974489D02A6" placementid="unknown" sspid="1512" pubid="06976a737a" siteid="8728" appbundle="" appid="unknown" campaign="c-bdyv0k0qx6" media="site" device="display" userid="RX-99b1dab9-8e19-4058-a3dd-701855839618" useridorig="RX-99b1dab9-8e19-4058-a3dd-701855839618" domain="factslides.com" ip="76.24.24.230" ifa="" dealid="1R-RX1-60960-20170420873644" requestid="a40d30a8ea948d787c1ed775775eb1a6" traffictype="Desktop_Web_Banner" forceclientaudit="false" ></scr'+'ipt>');document.write('<scr'+'ipt type="text/javascript" src="https://q.adrta.com/s/ro/aa.js?cb=5236701688#ro;paid=ro;avid=1140;caid=c-bdyv0k0qx6;plid=cr-c9qv4ezquaq;siteId=8728;publisherId=06976a737a;kv1=300x250;kv2=http%3A%2F%2Fwww.factslides.com%2Fs-Smoking;kv3=RX-99b1dab9-8e19-4058-a3dd-701855839618;kv4=76.24.24.230;kv7=1512;kv11=a40d30a8ea948d787c1ed775775eb1a6;kv12=unknown;kv16=;kv17=;kv18=;kv19=;kv23=;kv26=;kv25=;kv27=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F58.0.3029.110%20Safari%2F537.36;kv24=Desktop_Web_Banner"></scr'+'ipt>');document.write('<script type="text/javascript"> var _qevents = _qevents || [];(function() {var elem = document.createElement("script");elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";elem.async = true;elem.type = "text/javascript";var scpt = document.getElementsByTagName("script")[0];scpt.parentNode.insertBefore(elem, scpt); })();</script><script type="text/javascript"> _qevents.push({ qacct:"p-59TntzuqummDw", labels:"RhythmMax.Banner"}); </script>');document.write('<div id="dvcs" style="display: none;"><img src="https://sb.scorecardresearch.com/b?C1=8&C2=6035047&C3=4&C4=cr-c9qv4ezquaq&C5=c-bdyv0k0qx6&C7=&C12=&ns_ap_it=b&rn=5236701688" alt=""></div>');document.write('<iframe src="https://ads.pubmatic.com/AdServer/js/user_sync.html?p=35675&rx=0.4949520346534788&predirect=https%3A%2F%2Fsync.1rx.io%2Fusersync%2Fpubmatic%2F" style="display:none;visibility:hidden;position: absolute;top: -15000px;left: -15000px;"></iframe>');document.write('<scr'+'ipt src="https://pixel.mathtag.com/sync/js?sync=auto"></scr'+'ipt>');

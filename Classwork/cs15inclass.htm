@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practice Problem - 1</title>
+
+        <style type="text/css">
+            h1,
+            h2,
+            h3 {
+                text-align: center;
+                font-family: Arial;
+                color: Navy;
+            }
+            
+
+            p {
+                width: 60%;
+                font-family: Arial;
+                color: Navy;
+                text-align: justify;
+                padding-left: 200px;
+                font-size: large
+            
+            }
+
+            .border {
+                border: 5px solid blue;
+                margin-left: 150px;
+
+            }
+            
+        </style>
+        <script type="text/javascrip">
+        function clickP1(){
+            var h = document.getElementbyId("head1");
+             var p1 = document.getElementbyId("p1");
+              var p2 = document.getElementbyId("p2");
+      p1.style.backgroundColor = "yellow";
+       }
+
+        </script>
+    </head>
+
+    <body>
+        <h1>Practice Problem - CS15-InClass1</h1>
+        <hr>
+        <p>Please create the functionality to do the following: (a) When you click the first paragraph below, the background
+            color of the first paragraph must change to yellow and that of the second paragraph must change to lime. The
+            heading must be changed to "Go Paragraph 1". When you click the second paragraph, the background color of the
+            second paragraph must be yellow and that of the first must be lime. The heading must be changed to "Go Paragraph
+            2".</p>
+
+        <hr>
+        <h2>Paint the Paragraph</h2>
+        <h3>This is the heading that should change</h3>
+        <p class="border" id="p1" onclick="clickp1()">
+            This is paragraph 1
+        </p>
+        <p></p>
+        <p class="border" id="p2" onclick="clickP2()">
+            This is paragraph 2
+        </p>
+
+
+    </body>
+
+</html>
