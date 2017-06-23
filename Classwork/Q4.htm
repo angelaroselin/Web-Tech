@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Web Tech Exam - Q4</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<style type="text/css">
+			input {
+				width: 200px;
+				height: 50px;
+			}
+
+		
+		
+	
+			h1 {
+				text-align: center;
+				font-family: Arial;
+				font-weight: bold;
+			}
+			p {
+				text-align: center
+			}
+
+			p#instruction {
+				font-family: arial;
+				font-size: 16pt;
+				color: navy;
+				padding: 10px 100px 10px 100px;
+				text-align: left;	}
+
+			img {
+				border: 3px dotted black;	}
+
+			img:hover { 
+ 				border: 10px ridge red; 	} 
+		</style>
+
+		<script type="text/javascript">
+		
+			function change(paraID) {
+            var change1 = document.getElementById("cel");
+            var change2 = document.getElementById("pat");
+			var i = document.getElementById("image");
+            if (paraID == "cel") {
+                i.src = "images/celtics.png"
+            }
+            else if (paraID == "pat") {
+				i.src = "images/patriots.jpg"
+
+            }
+ 
+        
+        }
+
+		</script>
+
+</head>
+
+<body>
+
+		<h1>Web Tech Exam - Question 4</h1>
+		<p id="instruction">
+			
+			
+			
+			
+			This question has two parts: (a) Add appropriate functionality to the two buttons below such that when the first button is
+			clicked, the Celtics image is shown and when the second is clicked,the Patriots image is shown (5 points if written as
+			two separate functions, 10 if written as a single function). (b) When the mouse is moved over the image (note that only
+			one image is shown at a time), add a red, ridge border that is 10px thick. When the mouse is removed, the border should
+			disappear (10 points).</p>
+		
+		
+		
+		
+<hr>
+<p>
+			<img id="image" src="" alt="" title="This is the image" width="100" height="100" />
+</p>
+<p >
+
+
+	<input id="cel" onclick="change(this.id)" type="button" value="Celtics" />
+	<input id="pat" onclick="change(this.id)" type="button" value="Patriots" />
+		</p>
+
+
+
+
+	</body>
+
+</html>

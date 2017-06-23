@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Tech Exam - Q3</title>
+ <style type="text/css">
+            h1,
+            h2 {
+                text-align: center;
+                font-family: Arial;
+                color: Navy;
+            }
+
+            img {
+                border: 3px solid black;
+            }
+
+            p {
+                text-align: center;
+                font-size: larger;
+            }
+
+            p.q {
+                margin-right: 100px;
+                margin-left: 100px;
+                text-align: justify;
+                font-family: Arial;
+                color: Navy;
+                font-size: large;
+            }
+
+            button {
+                width: 200px;
+                height: 50px;
+            }
+
+            input#rst {
+                width: 200px;
+                height: 50px;
+            } </style>
+
+ <script type="text/javascript">
+            function convert(){
+            var myConverter = document.getElementById("form1");
+            var k = myConverter.km.value;
+            var mi = myConverter.m.value;
+
+            if(k=="" && mi == ""){
+                alert("Make sure to enter a number!");
+            }
+            else if(k!=""){
+                if(isNaN(k)){
+                    alert("Make sure to enter a number!");
+                }
+            else {
+                k = parseFloat(k);
+                mi = k * 2/3;
+                mi = mi.toFixed(1);
+                myConverter.m.value=mi;
+
+            }
+            
+            }
+            else{
+                if (isNaN(mi)){
+                    alert("Make sure to enter a number!"); 
+                }
+                else {
+                mi = parseFloat(mi);
+                k = mi * 3/2;
+                k = k.toFixed(1);
+                myConverter.km.value=k; 
+                }
+            }
+            return false
+            }
+        </script></head>
+
+    <body>
+        <h1>Web Tech Exam - Question 3</h1>
+        <hr />
+
+        <p class="q">
+            
+            
+            Please create the following functionality using the form given below. The user will enter ONE of two numerical values
+            into the text box in the form given. The user will then click the "Convert" button. Depending on which value
+            is entered, please convert it and show the corresponding converted value in the other text box. For example,
+            if Kilometers is entered and Miles is not, then you should convert KM to Miles. If Miles is entered and Kilometers
+            is not, then, convert Miles to KM. The conversion rule, simplified, is: multiply by (2/3) to convert KM to Miles
+            and by (3/2) to convert Miles to KM. Remember to use ParseFloat. Also, the function may require a "return" to
+            ensure that the form does not get reset. This part is worth 15 points. For the additional 5 points, please alert
+            user if both fields are empty when the "Convert" button is clicked and alert the user if a non-numerical value
+            is entered.
+
+
+        </p>
+        <hr />
+        <h2> Convert and Smile </h2>
+        <form id="form1" action="" method="post"><p>
+
+         Kilometers: <input type="text" name="km" size="10" /> Miles: <input type="text" name="m" size="10" />
+
+            </p> <p>
+                <button onclick="return convert()" type="submit" name="submit" value="Convert">Convert</button>
+                 </p>
+            <hr />
+            <p>
+
+
+                <input type="reset" name="reset" value="Clear" />  </p>
+
+
+
+
+
+    </form>
+    </body>
+  
+
+
+
+
+
+
+
+</html>

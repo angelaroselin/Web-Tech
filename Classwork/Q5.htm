@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Web Tech Exam - Q5</title>
+        <style type="text/css">
+ form {
+                font-family: Arial;
+                font-weight: bold;
+                padding: 30px;
+                width: 60%;
+                margin-right: auto;
+                margin-left: auto;
+                background-color: Silver;
+            }
+  h1 {
+                font-family: Arial;
+                font-weight: bold;
+                text-align: center;
+            }
+            p#instruction {
+                font-family: arial;
+                font-size: 16pt;
+                color: navy;
+                padding: 10px 100px 10px 100px;
+                text-align: left;
+            }
+        </style>
+        <script>
+                function processInput(){
+                var myForm = document.getElementById("form1");
+                var x;
+                var i = myForm.to.value
+               var sum = 0;
+                if(x=="" &&  i== ""){
+                alert("You should enter a number");
+            }
+               for (x=1;x<i; x++){
+                   sum=sum + x;}
+
+     document.getElementById("result").innerHTML = sum;        
+               return false;
+      }
+
+
+</script>
+    </head>
+
+    <body>
+        <h1>Web Tech Exam - Question 5</h1>
+        <p id="instruction">
+
+
+
+            Please create the following functionality using the form given below. The user will enter two integers in the two text inputs.
+            When SUM button is clicked, the sum of <b>all</b> the integers between these two numbers (inclusive) will be calculated
+            and displayed. You do not need to do validations. (10 points)
+            <br> <br> For extra points, you can do following things:
+            <br>1. calculate the sum of all integers/even numbers/odd numbers based on user's selection. (5 points)
+            <br>2. validate the inputs properly. (5 points)
+
+
+
+
+        </p>
+ <form id="form1" action="" method="post">
+           
+           
+           
+            <p>
+                From: <input type="text" name="from" size="10" /> To: <input type="text" name="to" size="10">
+            </p>
+ <p>
+                Please select (for extra points):<br><br> all integers<input type="radio" name="types" value="all"> even
+                numbers
+                <input type="radio" name="types" value="even"> odd numbers<input type="radio" name="types" value="odd"><br><br>
+
+            </p>
+
+ <p>
+                <input onclick="return processInput()" type="submit" name="Sum" value="SUM">
+                <input type="reset" name="reset" value="CLEAR">
+</p>
+ <p>The sum is <span id="result"></span>.</p>
+ </form>
+ </body>
+
+</html>

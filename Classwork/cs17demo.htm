@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>WebTechnologies -Array Demo</title>
+        <script>
+            function processInput(){
+                var myForm=document.getElementById("form1")
+                var userChoice;
+         if (colors[0].checked)
+{
+userchoice = colors[0].value;
+}
+else if (colors[1].checked)
+{
+userchoice = colors[1].value;
+}
+else if (colors[2].checked)
+{
+userchoice = colors[2].value;
+}
+else {
+userchoice = colors[3].value;
+}
+document.getElementById("choice").innerHTML=userChoice;
+return false;
+
+</script>
+
+    </head>
+    <body>
+    <h1>Array Demo</h1>
+ <form action="" method="post">
+Red: <input type="radio" name="colors" value="red">
+Blue: <input type="radio" name="colors" value="blue">
+Yellow: <input type="radio" name="colors" value="yellow">
+Green: <input type="radio" name="colors" value="green">
+button</form>
+
+
+</html>
